@@ -27,7 +27,7 @@ int main()
 
 void lancamentos(int n1, double* co, double* ca){
     int moeda = 0;
-    float cara = 0, coroa = 0, base = 0;
+    int cara = 0, coroa = 0, base = 0;
     for(int i = 0; i < n1; i++){
         moeda = cara_coroa();
         if(moeda == 1){
@@ -37,8 +37,8 @@ void lancamentos(int n1, double* co, double* ca){
         }
         base++;
     }
-    *co = (coroa/base) * 100;
-    *ca = (cara/base) * 100;
+    *co = ((double)coroa/base) * 100;
+    *ca = ((double)cara/base) * 100;
 }
 
 int cara_coroa(){
