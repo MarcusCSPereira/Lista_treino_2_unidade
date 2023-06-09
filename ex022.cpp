@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 
-string primo(int a);
+string primo(int n1);
 
 int main(){
     	
